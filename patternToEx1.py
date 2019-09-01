@@ -44,3 +44,9 @@ for index in range(NN):
 
         #パターンを画像として出力
         #pattern.show()
+        if count == 1:
+            name = "pattern/" + "shiftPattern" + str(N) + "plus"+ str(index) +".bmp"
+        else:
+            name = "pattern/" + "shiftPattern" + str(N) + "minus" + str(index) + ".bmp"
+        pattern.save(name)
+        
